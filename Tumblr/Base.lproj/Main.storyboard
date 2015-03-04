@@ -45,6 +45,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="search_selected_icon"/>
+                                        <connections>
+                                            <segue destination="MtJ-aN-37D" kind="modal" id="PDW-6Q-rRE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dLf-Ry-nzv" userLabel="accountButton">
                                         <rect key="frame" x="212" y="4" width="35" height="35"/>
@@ -55,6 +58,7 @@
                                         <state key="selected" image="account_selected_icon"/>
                                         <connections>
                                             <action selector="didPressTabButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R49-LQ-8BL"/>
+                                            <action selector="didTapNavButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5FS-iL-yQX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5rT-13-XWn" userLabel="trendingButton">
@@ -66,6 +70,7 @@
                                         <state key="selected" image="trending_selected_icon"/>
                                         <connections>
                                             <action selector="didPressTabButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6yH-S0-A6c"/>
+                                            <action selector="didTapNavButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pwD-mh-vpf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -147,6 +152,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" id="8ka-J5-rfL">
+                                <rect key="frame" x="0.0" y="-7" width="320" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.2587820079" blue="0.32501874520000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xmq-hN-4nt">
                                 <rect key="frame" x="123" y="165" width="75" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,16 +199,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PeP-r0-836">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PeP-r0-836" userLabel="nevermind">
                                 <rect key="frame" x="0.0" y="515" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nevermind">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressNevermind:" destination="MtJ-aN-37D" eventType="touchUpInside" id="TeU-Tq-03W"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529410000001" green="0.2587820079" blue="0.32501874520000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="chatButton" destination="B7F-I5-kOk" id="Szk-qf-RR2"/>
+                        <outlet property="linkButton" destination="rU1-qy-2GL" id="vkI-Pz-U18"/>
+                        <outlet property="photoButton" destination="xmq-hN-4nt" id="w7w-NX-pTT"/>
+                        <outlet property="quoteButton" destination="Cn9-JA-awn" id="vRX-cR-CKP"/>
+                        <outlet property="textButton" destination="fea-Ch-Iw1" id="iBe-uw-bfY"/>
+                        <outlet property="videoButton" destination="BoU-gG-Hp4" id="HTk-0v-Wya"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddj-4z-9Am" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

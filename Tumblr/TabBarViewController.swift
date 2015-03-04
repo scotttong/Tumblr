@@ -23,6 +23,8 @@ class TabBarViewController: UIViewController {
 	var composeViewController: ComposeViewController!
 	var accountViewController: AccountViewController!
 	var trendingViewController: TrendingViewController!
+	
+	var fadeTransition: FadeTransition!
 
 	var currentViewController: UIViewController!
 	var selectedButton: UIButton!
@@ -88,6 +90,13 @@ class TabBarViewController: UIViewController {
 
 	}
 	
+	//first attempt at abstracting the tab button behaviors
+	@IBAction func didTapNavButton(sender: UIButton) {
+		selectedButton = sender as UIButton
+		println(selectedButton.description)
+	}
+	
+	
 	// function to remove views
 	func removeChildView (content: UIViewController) {
 		content.willMoveToParentViewController(nil)
@@ -95,21 +104,31 @@ class TabBarViewController: UIViewController {
 		content.removeFromParentViewController()
 	}
 
-		
-
-		
-	
-	
 	
 
-    /*
+		
+	
+	
+	
+
+	
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		var destinationViewController = segue.destinationViewController as ComposeViewController
+		
+		fadeTransition = FadeTransition()
+		fadeTransition.duration = 0.5
+		destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+		destinationViewController.transitioningDelegate = fadeTransition
+
+		
+		
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+	
 
 }
