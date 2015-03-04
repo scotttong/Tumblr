@@ -20,7 +20,28 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	
+	
+	override func viewWillAppear (animated: Bool) {
+//		println("----")
+//		println("home view will appear")
+	}
+	
+	override func viewDidAppear (animated: Bool) {
+//		println("home view did appear")
+	}
+	
+	override func viewWillDisappear (animated: Bool) {
+//		println("home view will disappear")
+	}
+	
+	override func viewDidDisappear (animated: Bool) {
+//		println("home view did disappear")
+//		println("----")
+		
+	}
+
 
     /*
     // MARK: - Navigation

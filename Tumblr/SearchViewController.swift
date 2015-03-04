@@ -20,6 +20,23 @@ class SearchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	override func viewWillAppear (animated: Bool) {
+//		println("----")
+//		println("search view will appear")
+	}
+	
+	override func viewDidAppear (animated: Bool) {
+//		println("search view did appear")
+	}
+	
+	override func viewWillDisappear (animated: Bool) {
+//		println("search view will disappear")
+	}
+	
+	override func viewDidDisappear (animated: Bool) {
+//		println("search view did disappear")
+//		println("----")
+	}
     
 
     /*
