@@ -153,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" id="8ka-J5-rfL">
-                                <rect key="frame" x="0.0" y="-7" width="320" height="522"/>
+                                <rect key="frame" x="0.0" y="-7" width="320" height="575"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.2587820079" blue="0.32501874520000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -214,6 +214,7 @@
                     <connections>
                         <outlet property="chatButton" destination="B7F-I5-kOk" id="Szk-qf-RR2"/>
                         <outlet property="linkButton" destination="rU1-qy-2GL" id="vkI-Pz-U18"/>
+                        <outlet property="nevermindButton" destination="PeP-r0-836" id="iv3-UY-A66"/>
                         <outlet property="photoButton" destination="xmq-hN-4nt" id="w7w-NX-pTT"/>
                         <outlet property="quoteButton" destination="Cn9-JA-awn" id="vRX-cR-CKP"/>
                         <outlet property="textButton" destination="fea-Ch-Iw1" id="iBe-uw-bfY"/>
