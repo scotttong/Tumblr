@@ -22,6 +22,7 @@
 		19B221461AA6CF3800416D40 /* TumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B221451AA6CF3800416D40 /* TumblrTests.swift */; };
 		19B221501AA6D2BD00416D40 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B2214F1AA6D2BD00416D40 /* TabBarViewController.swift */; };
 		19E70AA11AABA67400FF5199 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E70AA01AABA67400FF5199 /* Common.swift */; };
+		19E70AA31AABB26C00FF5199 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E70AA21AABB26C00FF5199 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		19B221451AA6CF3800416D40 /* TumblrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrTests.swift; sourceTree = "<group>"; };
 		19B2214F1AA6D2BD00416D40 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		19E70AA01AABA67400FF5199 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		19E70AA21AABB26C00FF5199 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				196B85941AA6D62E0050AA53 /* TrendingViewController.swift */,
 				196B85961AA6F8940050AA53 /* FadeTransition.swift */,
 				196B85981AA6F90A0050AA53 /* BaseTransition.swift */,
+				19E70AA21AABB26C00FF5199 /* LoginViewController.swift */,
 				19E70AA01AABA67400FF5199 /* Common.swift */,
 				19B221361AA6CF3800416D40 /* Images.xcassets */,
 				19B221381AA6CF3800416D40 /* LaunchScreen.xib */,
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E70AA31AABB26C00FF5199 /* LoginViewController.swift in Sources */,
 				196B858F1AA6D5E00050AA53 /* SearchViewController.swift in Sources */,
 				196B85991AA6F90A0050AA53 /* BaseTransition.swift in Sources */,
 				196B85971AA6F8940050AA53 /* FadeTransition.swift in Sources */,

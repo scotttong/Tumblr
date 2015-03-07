@@ -11,17 +11,22 @@ import UIKit
 class SearchViewController: UIViewController {
 	@IBOutlet weak var loadingBackground: UIView!
 
+	@IBOutlet weak var searchScrollView: UIScrollView!
 	@IBOutlet weak var searchFeed: UIImageView!
 	@IBOutlet weak var loading1: UIImageView!
+	@IBOutlet weak var trendingFeed: UIImageView!
 	
-    override func viewDidLoad() {
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+		
+		searchScrollView.contentSize = CGSize(width: view.bounds.width/2, height: 1217)
+		searchScrollView.frame.size.height = 524
+	
 		
 		searchFeed.hidden = true
-//		loadingBackground.hidden = true
-		
 		var images = UIImage.animatedImageNamed("loading-", duration: 0.7)
 		loading1.image = images
 	

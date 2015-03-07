@@ -1,23 +1,17 @@
 //
-//  TrendingViewController.swift
+//  LoginViewController.swift
 //  Tumblr
 //
-//  Created by Scott Tong on 3/3/15.
+//  Created by Scott Tong on 3/7/15.
 //  Copyright (c) 2015 Scott Tong. All rights reserved.
 //
 
 import UIKit
 
-class TrendingViewController: UIViewController {
-
-	@IBOutlet weak var trendingScrollView: UIScrollView!
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		
-		trendingScrollView.contentSize = CGSize(width: view.bounds.width/2, height: 255)
-		trendingScrollView.frame.size.height = 524
-	
 
         // Do any additional setup after loading the view.
     }

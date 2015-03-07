@@ -9,11 +9,15 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+	@IBOutlet weak var homeScrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		homeScrollView.frame.size = CGSize(width: view.bounds.width, height: 524)
+		
     }
 
     override func didReceiveMemoryWarning() {

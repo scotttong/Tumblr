@@ -9,11 +9,15 @@
 import UIKit
 
 class AccountViewController: UIViewController {
+	@IBOutlet weak var accountScrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		accountScrollView.contentSize = CGSize(width: 320, height: 524)
+		accountScrollView.frame.size = CGSize(width: 320, height: 524)
     }
 
     override func didReceiveMemoryWarning() {
