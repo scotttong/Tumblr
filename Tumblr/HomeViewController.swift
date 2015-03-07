@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 	@IBOutlet weak var homeScrollView: UIScrollView!
+	
+	var fadeTransition: FadeTransition!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,14 +49,22 @@ class HomeViewController: UIViewController {
 	}
 
 
-    /*
+	
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		var destinationViewController = segue.destinationViewController as LoginViewController
+		
+		fadeTransition = FadeTransition()
+		fadeTransition.duration = 0.3
+		destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+		destinationViewController.transitioningDelegate = fadeTransition
+		
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+	
 
 }
