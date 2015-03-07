@@ -21,6 +21,7 @@
 		19B2213A1AA6CF3800416D40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B221381AA6CF3800416D40 /* LaunchScreen.xib */; };
 		19B221461AA6CF3800416D40 /* TumblrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B221451AA6CF3800416D40 /* TumblrTests.swift */; };
 		19B221501AA6D2BD00416D40 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B2214F1AA6D2BD00416D40 /* TabBarViewController.swift */; };
+		19E70AA11AABA67400FF5199 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E70AA01AABA67400FF5199 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		19B221441AA6CF3800416D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B221451AA6CF3800416D40 /* TumblrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrTests.swift; sourceTree = "<group>"; };
 		19B2214F1AA6D2BD00416D40 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		19E70AA01AABA67400FF5199 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				196B85941AA6D62E0050AA53 /* TrendingViewController.swift */,
 				196B85961AA6F8940050AA53 /* FadeTransition.swift */,
 				196B85981AA6F90A0050AA53 /* BaseTransition.swift */,
+				19E70AA01AABA67400FF5199 /* Common.swift */,
 				19B221361AA6CF3800416D40 /* Images.xcassets */,
 				19B221381AA6CF3800416D40 /* LaunchScreen.xib */,
 				19B2212F1AA6CF3800416D40 /* AppDelegate.swift */,
@@ -240,6 +243,7 @@
 				196B85991AA6F90A0050AA53 /* BaseTransition.swift in Sources */,
 				196B85971AA6F8940050AA53 /* FadeTransition.swift in Sources */,
 				196B85951AA6D62E0050AA53 /* TrendingViewController.swift in Sources */,
+				19E70AA11AABA67400FF5199 /* Common.swift in Sources */,
 				19B221321AA6CF3800416D40 /* ViewController.swift in Sources */,
 				196B85931AA6D6240050AA53 /* AccountViewController.swift in Sources */,
 				19B221501AA6D2BD00416D40 /* TabBarViewController.swift in Sources */,

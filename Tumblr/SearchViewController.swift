@@ -9,11 +9,23 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+	@IBOutlet weak var loadingBackground: UIView!
 
+	@IBOutlet weak var searchFeed: UIImageView!
+	@IBOutlet weak var loading1: UIImageView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		
+		searchFeed.hidden = true
+//		loadingBackground.hidden = true
+		
+		var images = UIImage.animatedImageNamed("loading-", duration: 0.7)
+		loading1.image = images
+	
+		
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,12 +33,18 @@ class SearchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	override func viewWillAppear (animated: Bool) {
-//		println("----")
-//		println("search view will appear")
+
+		
 	}
 	
 	override func viewDidAppear (animated: Bool) {
-//		println("search view did appear")
+
+		delay(2, { () -> () in
+			self.searchFeed.hidden = false
+			self.loading1.hidden = true
+		})
+		
+	
 	}
 	
 	override func viewWillDisappear (animated: Bool) {
