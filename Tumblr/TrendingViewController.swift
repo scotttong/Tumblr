@@ -16,6 +16,8 @@ class TrendingViewController: UIViewController {
         super.viewDidLoad()
 		
 		trendingScrollView.contentSize = CGSize(width: view.bounds.width/2, height: 1217)
+		trendingScrollView.frame.size.height = 568
+	
 
         // Do any additional setup after loading the view.
     }

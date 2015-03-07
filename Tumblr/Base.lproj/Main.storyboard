@@ -57,8 +57,7 @@
                                         </state>
                                         <state key="selected" image="account_selected_icon"/>
                                         <connections>
-                                            <action selector="didPressTabButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R49-LQ-8BL"/>
-                                            <action selector="didTapNavButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5FS-iL-yQX"/>
+                                            <action selector="didPressAccountButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1M7-Tv-ego"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5rT-13-XWn" userLabel="trendingButton">
@@ -69,8 +68,7 @@
                                         </state>
                                         <state key="selected" image="trending_selected_icon"/>
                                         <connections>
-                                            <action selector="didPressTabButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6yH-S0-A6c"/>
-                                            <action selector="didTapNavButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pwD-mh-vpf"/>
+                                            <action selector="didPressTrendingButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zQ4-wT-etz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,12 +79,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="NW4-Fd-PQ7">
+                                <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="explore_popup" id="pI4-7m-wRs">
+                                <rect key="frame" x="-1" y="464" width="185" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="accountButton" destination="dLf-Ry-nzv" id="XaI-vb-VJS"/>
                         <outlet property="contentView" destination="Idz-ca-lG6" id="naY-J3-OGf"/>
+                        <outlet property="explorePopup" destination="pI4-7m-wRs" id="Amw-ZX-EUo"/>
                         <outlet property="homeButton" destination="Hpc-qc-ClF" id="VyW-i6-g1d"/>
                         <outlet property="searchButton" destination="G3W-1J-avR" id="pKs-v6-D8i"/>
                         <outlet property="trendingButton" destination="5rT-13-XWn" id="Y87-Em-U1f"/>
@@ -282,6 +289,7 @@
         <image name="account_selected_icon" width="35" height="35"/>
         <image name="chat_icon" width="75" height="96"/>
         <image name="compose_button" width="50" height="35"/>
+        <image name="explore_popup" width="185" height="77"/>
         <image name="home" width="320" height="524"/>
         <image name="home_icon" width="35" height="35"/>
         <image name="home_overlay" width="320" height="100"/>
